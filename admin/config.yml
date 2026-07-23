@@ -14,6 +14,8 @@ collections:
       - name: "empresas"
         label: "Grupo e as 5 empresas"
         file: "content/companies.json"
+        editor:
+          preview: false
         fields:
           - label: "Grupo"
             name: "grupo"
@@ -87,6 +89,8 @@ collections:
       - name: "noticias"
         label: "Feed de notícias"
         file: "content/news.json"
+        editor:
+          preview: false
         fields:
           - label: "Notícias"
             name: "noticias"
