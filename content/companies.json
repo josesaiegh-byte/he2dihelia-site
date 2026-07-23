@@ -115,7 +115,7 @@
       "logo": "assets/logos/pureza-divina.png",
       "contacto": {
         "morada": "Situada em Brene, Bissau / Guiné-Bissau",
-        "telefone": "+245 ",
+        "telefone": "+245 :95 539 89 99 / +245 95 542 75 59 / +245 96 648 08 08",
         "email": ""
       },
       "servicos": [
@@ -127,8 +127,8 @@
       "galeria": [
         {
           "tipo": "imagem",
-          "src": "",
-          "legenda": "Linha de engarrafamento PUREZA DIVINA"
+          "src": "/assets/uploads/whatsapp-image-2026-06-12-at-14.42.11.jpeg",
+          "legenda": "ÁGUA CRISTALINA COM PUREZA DIVINA"
         },
         {
           "tipo": "imagem",
@@ -137,7 +137,7 @@
         },
         {
           "tipo": "video",
-          "src": "",
+          "src": "/assets/uploads/whatsapp-video-2026-06-12-at-17.51.13.mp4",
           "legenda": "Vídeo: do tratamento à garrafa"
         }
       ],
@@ -149,7 +149,7 @@
     {
       "setor": "Fábrica de Gelo",
       "cor_primaria": "#1a8fd1",
-      "descricao": "Produção de gelo em cubos e barras com água tratada, pensada para restaurantes, bares, peixarias, eventos e uso doméstico — com entrega rápida e higiene garantida.",
+      "descricao": "Produção de gelo em escamas com água tratada, pensada para restaurantes, bares, peixarias, eventos e uso doméstico — com entrega rápida e higiene garantida.",
       "redes_sociais": {
         "instagram": "",
         "facebook": "",
@@ -157,9 +157,9 @@
       },
       "logo": "assets/logos/baloba-gelo-puro.svg",
       "contacto": {
-        "morada": "[adicionar morada]",
-        "telefone": "[adicionar número]",
-        "email": "geral@balobagelopuro.gw"
+        "morada": "Situada na Zona 7 (ao lado do Estádio de Futebol Nacional 24 de Setembro), Bissau / Guiné-Bissau",
+        "telefone": "",
+        "email": ""
       },
       "servicos": [
         "Gelo em cubo e em barra",
