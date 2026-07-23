@@ -3,12 +3,12 @@
     "nome": "HE2DIHÉLIA, SARL",
     "nif": "510148085",
     "pais": "Guiné-Bissau",
-    "slogan": "Cinco empresas. Uma só visão de futuro.",
+    "slogan": "CINCO EMPRESAS. Uma só visão de futuro. Confiança, Inovação, Sustentabilidade e progresso para a Guiné-Bissau",
     "descricao": "A HE2DIHÉLIA, SARL é um grupo empresarial guineense que reúne cinco negócios independentes ligados pelo mesmo compromisso: construir soluções sólidas para o dia a dia das famílias e das obras da Guiné-Bissau — da terra que vira bloco, à água que se bebe, ao gelo que conserva, e ao lazer que distrai.",
     "contacto": {
-      "morada": "Sede: [adicionar morada da sede], Bissau, Guiné-Bissau",
-      "telefone": "[adicionar número]",
-      "email": "geral@he2dihelia.gw"
+      "morada": "Sede: RUA VITORINO COSTA, N2 (T1-B) - Prédio dos Transportes, Bissau, Guiné-Bissau",
+      "telefone": "+245 95 631 29 67 - +245 96 90 81 763",
+      "email": "he2diheliagb@gmail.com"
     },
     "redes_sociais": {
       "instagram": "",
@@ -18,14 +18,20 @@
   },
   "empresas": [
     {
-      "id": "baloba-tchon-firme",
-      "nome": "BALOBA TCHON FIRME",
       "setor": "Construção Civil",
-      "logo": "assets/logos/baloba-tchon-firme.png",
       "cor_primaria": "#e8792d",
-      "cor_secundaria": "#1c2f45",
-      "slogan": "Firmeza em cada construção, do alicerce ao telhado.",
       "descricao": "Equipa especializada em obras residenciais, comerciais e infraestruturas, do projeto à entrega. Trabalhamos com rigor técnico e prazos cumpridos, usando mão de obra local qualificada.",
+      "redes_sociais": {
+        "instagram": "",
+        "facebook": "",
+        "tiktok": ""
+      },
+      "logo": "assets/logos/baloba-tchon-firme.png",
+      "contacto": {
+        "morada": "[adicionar morada]",
+        "telefone": "[adicionar número]",
+        "email": "geral@balobatchonfirme.gw"
+      },
       "servicos": [
         "Construção de raiz e ampliações",
         "Reabilitação e acabamentos",
@@ -49,26 +55,26 @@
           "legenda": "Vídeo: acabamentos finais de uma moradia"
         }
       ],
-      "contacto": {
-        "morada": "[adicionar morada]",
-        "telefone": "[adicionar número]",
-        "email": "geral@balobatchonfirme.gw"
-      },
+      "nome": "BALOBA TCHON FIRME",
+      "id": "baloba-tchon-firme",
+      "cor_secundaria": "#1c2f45",
+      "slogan": "Firmeza em cada construção, do alicerce ao telhado."
+    },
+    {
+      "setor": "Bloco Ecológico",
+      "cor_primaria": "#2f7d32",
+      "descricao": "Produzimos blocos de terra comprimida (BTC), uma alternativa ecológica, resistente e mais económica ao tijolo tradicional — reduzindo o impacto ambiental sem comprometer a qualidade da construção.",
       "redes_sociais": {
         "instagram": "",
         "facebook": "",
         "tiktok": ""
-      }
-    },
-    {
-      "id": "baloba-eco-blocos",
-      "nome": "BALOBA ECO BLOCOS",
-      "setor": "Bloco Ecológico",
+      },
       "logo": "assets/logos/baloba-eco-blocos.png",
-      "cor_primaria": "#2f7d32",
-      "cor_secundaria": "#8a5a34",
-      "slogan": "A firmeza da terra, o futuro da construção.",
-      "descricao": "Produzimos blocos de terra comprimida (BTC), uma alternativa ecológica, resistente e mais económica ao tijolo tradicional — reduzindo o impacto ambiental sem comprometer a qualidade da construção.",
+      "contacto": {
+        "morada": "Sede: RUA VITORINO COSTA, N2 (T1-B) - Prédio dos Transportes, Bissau, Guiné-Bissau",
+        "telefone": "+245 95631 29 67 / +245 96 90 81 763",
+        "email": ""
+      },
       "servicos": [
         "Fabrico de blocos ecológicos (BTC)",
         "Fornecimento para obras de grande e pequena escala",
@@ -78,43 +84,43 @@
       "galeria": [
         {
           "tipo": "imagem",
-          "src": "",
+          "src": "/assets/uploads/whatsapp-image-2026-04-14-at-23.21.47-1-.jpeg",
           "legenda": "Blocos ecológicos prensados"
         },
         {
           "tipo": "imagem",
-          "src": "",
+          "src": "/assets/uploads/whatsapp-image-2026-04-14-at-23.21.47.jpeg",
           "legenda": "Processo de compressão da terra"
         },
         {
-          "tipo": "video",
-          "src": "",
+          "tipo": "imagem",
+          "src": "/assets/uploads/whatsapp-image-2026-04-14-at-23.21.47-2-.jpeg",
           "legenda": "Vídeo: como nasce um eco-bloco"
         }
       ],
-      "contacto": {
-        "morada": "[adicionar morada]",
-        "telefone": "[adicionar número]",
-        "email": "geral@balobaecoblocos.gw"
-      },
+      "nome": "BALOBA ECO BLOCOS",
+      "id": "baloba-eco-blocos",
+      "cor_secundaria": "#8a5a34",
+      "slogan": "A Firmeza da Terra, o Futuro da Construção."
+    },
+    {
+      "setor": "Água Mineral",
+      "cor_primaria": "#1a6fb0",
+      "descricao": "Água mineral tratada, no saco plastificado e engarrafada com controlo de qualidade rigoroso, para quem procura pureza em cada gota — em casa, no escritório ou em grandes eventos.",
       "redes_sociais": {
         "instagram": "",
         "facebook": "",
         "tiktok": ""
-      }
-    },
-    {
-      "id": "pureza-divina",
-      "nome": "PUREZA DIVINA",
-      "setor": "Água Mineral",
+      },
       "logo": "assets/logos/pureza-divina.png",
-      "cor_primaria": "#1a6fb0",
-      "cor_secundaria": "#0a3d63",
-      "slogan": "Qualidade que você pode confiar.",
-      "descricao": "Água mineral tratada e engarrafada com controlo de qualidade rigoroso, para quem procura pureza em cada gota — em casa, no escritório ou em grandes eventos.",
+      "contacto": {
+        "morada": "Situada em Brene, Bissau / Guiné-Bissau",
+        "telefone": "+245 ",
+        "email": ""
+      },
       "servicos": [
-        "Água mineral em garrafas e garrafões",
-        "Fornecimento para eventos e escritórios",
+        "Água mineral em sacos plastificados e garrafas",
+        "Fornecimento para a população, eventos e escritórios",
         "Distribuição em Bissau e arredores",
         "Planos de fornecimento regular"
       ],
@@ -135,26 +141,26 @@
           "legenda": "Vídeo: do tratamento à garrafa"
         }
       ],
-      "contacto": {
-        "morada": "[adicionar morada]",
-        "telefone": "[adicionar número]",
-        "email": "geral@purezadivina.gw"
-      },
+      "nome": "PUREZA DIVINA",
+      "id": "pureza-divina",
+      "cor_secundaria": "#0a3d63",
+      "slogan": "Qualidade que você pode confiar."
+    },
+    {
+      "setor": "Fábrica de Gelo",
+      "cor_primaria": "#1a8fd1",
+      "descricao": "Produção de gelo em cubos e barras com água tratada, pensada para restaurantes, bares, peixarias, eventos e uso doméstico — com entrega rápida e higiene garantida.",
       "redes_sociais": {
         "instagram": "",
         "facebook": "",
         "tiktok": ""
-      }
-    },
-    {
-      "id": "fabrica-de-gelo",
-      "nome": "BALOBA GELO PURO",
-      "setor": "Fábrica de Gelo",
+      },
       "logo": "assets/logos/baloba-gelo-puro.svg",
-      "cor_primaria": "#1a8fd1",
-      "cor_secundaria": "#0a4d8c",
-      "slogan": "Frescura garantida, todos os dias.",
-      "descricao": "Produção de gelo em cubos e barras com água tratada, pensada para restaurantes, bares, peixarias, eventos e uso doméstico — com entrega rápida e higiene garantida.",
+      "contacto": {
+        "morada": "[adicionar morada]",
+        "telefone": "[adicionar número]",
+        "email": "geral@balobagelopuro.gw"
+      },
       "servicos": [
         "Gelo em cubo e em barra",
         "Fornecimento para hotelaria e restauração",
@@ -178,26 +184,26 @@
           "legenda": "Vídeo: processo de congelação"
         }
       ],
-      "contacto": {
-        "morada": "[adicionar morada]",
-        "telefone": "[adicionar número]",
-        "email": "geral@balobagelopuro.gw"
-      },
-      "redes_sociais": {
-        "instagram": "",
-        "facebook": "",
-        "tiktok": ""
-      }
+      "nome": "BALOBA GELO PURO",
+      "id": "fabrica-de-gelo",
+      "cor_secundaria": "#0a4d8c",
+      "slogan": "Frescura garantida, todos os dias."
     },
     {
-      "id": "gb-coloscolos",
-      "nome": "GB COLOSCOLOS",
       "setor": "Jogos Online",
-      "logo": "assets/logos/gb-coloscolos.png",
       "cor_primaria": "#f2a900",
-      "cor_secundaria": "#1a1a1a",
-      "slogan": "Diversão e sorte ao alcance de um clique.",
-      "descricao": "Plataforma de jogos online e apostas de entretenimento, feita para o público guineense, com jogos simples, seguros e pensados para telemóvel.",
+      "descricao": "Plataforma de jogos online e apostas de entretenimento, feita para o público guineense, com jogos simples, seguros e pensados para o Computador, Telemóvel e Tablet.",
+      "redes_sociais": {
+        "instagram": "https://www.instagram.com/gbcoloscolos?igsh=MThhbzd6MDFkbHRlaA%3D%3D&utm_source=qr",
+        "facebook": "https://www.facebook.com/share/18sdknWaBQ/?mibextid=wwXIfr",
+        "tiktok": "https://www.tiktok.com/@gbcoloscolos?_r=1&_t=ZS-96u2OkclGi4"
+      },
+      "logo": "assets/logos/gb-coloscolos.png",
+      "contacto": {
+        "morada": "Sede: RUA VITORINO COSTA, N2 (T1-B) - Prédio dos Transportes, Bissau, Guiné-Bissau",
+        "telefone": "+245 95 733 96 44 / +245 96 699 38 38",
+        "email": "gbcoloscolos@gmail.com"
+      },
       "servicos": [
         "Jogos de sorte online",
         "Suporte ao jogador em português",
@@ -207,30 +213,28 @@
       "galeria": [
         {
           "tipo": "imagem",
-          "src": "",
+          "src": "/assets/uploads/post-2.jpg",
           "legenda": "Interface da plataforma GB COLOSCOLOS"
         },
         {
           "tipo": "imagem",
-          "src": "",
+          "src": "/assets/uploads/post-4.jpg",
           "legenda": "Evento de lançamento"
         },
         {
           "tipo": "video",
           "src": "",
           "legenda": "Vídeo: como jogar em 1 minuto"
+        },
+        {
+          "tipo": "imagem",
+          "src": "/assets/uploads/post-7.jpg"
         }
       ],
-      "contacto": {
-        "morada": "[adicionar morada]",
-        "telefone": "[adicionar número]",
-        "email": "geral@gbcoloscolos.gw"
-      },
-      "redes_sociais": {
-        "instagram": "",
-        "facebook": "",
-        "tiktok": ""
-      }
+      "nome": "GB COLOSCOLOS",
+      "id": "gb-coloscolos",
+      "cor_secundaria": "#1a1a1a",
+      "slogan": "Diversão e sorte ao alcance de um clique."
     }
   ]
 }
