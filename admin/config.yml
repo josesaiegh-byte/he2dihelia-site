@@ -1,0 +1,109 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+locale: "pt"
+
+collections:
+  - name: "site"
+    label: "Grupo & Empresas"
+    files:
+      - name: "empresas"
+        label: "Grupo e as 5 empresas"
+        file: "content/companies.json"
+        fields:
+          - label: "Grupo"
+            name: "grupo"
+            widget: "object"
+            fields:
+              - { label: "Nome do grupo", name: "nome", widget: "string" }
+              - { label: "NIF", name: "nif", widget: "string" }
+              - { label: "País", name: "pais", widget: "string" }
+              - { label: "Slogan do grupo", name: "slogan", widget: "string" }
+              - { label: "Descrição do grupo", name: "descricao", widget: "text" }
+              - label: "Contacto do grupo"
+                name: "contacto"
+                widget: "object"
+                fields:
+                  - { label: "Morada da sede", name: "morada", widget: "string" }
+                  - { label: "Telefone / WhatsApp", name: "telefone", widget: "string" }
+                  - { label: "E-mail", name: "email", widget: "string" }
+              - label: "Redes sociais do grupo"
+                name: "redes_sociais"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Instagram (link completo)", name: "instagram", widget: "string", required: false }
+                  - { label: "Facebook (link completo)", name: "facebook", widget: "string", required: false }
+                  - { label: "TikTok (link completo)", name: "tiktok", widget: "string", required: false }
+          - label: "Empresas"
+            name: "empresas"
+            widget: "list"
+            summary: "{{fields.nome}} — {{fields.setor}}"
+            fields:
+              - { label: "Identificador (não alterar)", name: "id", widget: "string" }
+              - { label: "Nome da empresa", name: "nome", widget: "string" }
+              - { label: "Setor", name: "setor", widget: "string" }
+              - { label: "Logótipo", name: "logo", widget: "image" }
+              - { label: "Cor primária (ex: #e8792d)", name: "cor_primaria", widget: "string" }
+              - { label: "Cor secundária (ex: #1c2f45)", name: "cor_secundaria", widget: "string" }
+              - { label: "Slogan", name: "slogan", widget: "string" }
+              - { label: "Descrição", name: "descricao", widget: "text" }
+              - label: "Contacto da empresa"
+                name: "contacto"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Morada", name: "morada", widget: "string", required: false }
+                  - { label: "Telefone / WhatsApp", name: "telefone", widget: "string", required: false }
+                  - { label: "E-mail", name: "email", widget: "string", required: false }
+              - label: "Redes sociais"
+                name: "redes_sociais"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Instagram (link completo)", name: "instagram", widget: "string", required: false }
+                  - { label: "Facebook (link completo)", name: "facebook", widget: "string", required: false }
+                  - { label: "TikTok (link completo)", name: "tiktok", widget: "string", required: false }
+              - label: "Serviços"
+                name: "servicos"
+                widget: "list"
+                field: { label: "Serviço", name: "servico", widget: "string" }
+              - label: "Galeria (fotos e vídeos)"
+                name: "galeria"
+                widget: "list"
+                summary: "{{fields.legenda}}"
+                fields:
+                  - { label: "Tipo", name: "tipo", widget: "select", options: ["imagem", "video"] }
+                  - { label: "Ficheiro", name: "src", widget: "file", required: false }
+                  - { label: "Legenda", name: "legenda", widget: "string", required: false }
+
+  - name: "noticias"
+    label: "Notícias / Feed"
+    files:
+      - name: "noticias"
+        label: "Feed de notícias"
+        file: "content/news.json"
+        fields:
+          - label: "Notícias"
+            name: "noticias"
+            widget: "list"
+            summary: "{{fields.data}} — {{fields.titulo}}"
+            fields:
+              - { label: "Título", name: "titulo", widget: "string" }
+              - label: "Empresa"
+                name: "empresa"
+                widget: "select"
+                options:
+                  - { label: "Grupo (geral)", value: "grupo" }
+                  - { label: "BALOBA TCHON FIRME", value: "baloba-tchon-firme" }
+                  - { label: "BALOBA ECO BLOCOS", value: "baloba-eco-blocos" }
+                  - { label: "PUREZA DIVINA", value: "pureza-divina" }
+                  - { label: "BALOBA GELO PURO", value: "fabrica-de-gelo" }
+                  - { label: "GB COLOSCOLOS", value: "gb-coloscolos" }
+              - { label: "Data", name: "data", widget: "date", format: "YYYY-MM-DD" }
+              - { label: "Resumo", name: "resumo", widget: "text" }
+              - { label: "Imagem (opcional)", name: "imagem", widget: "image", required: false }

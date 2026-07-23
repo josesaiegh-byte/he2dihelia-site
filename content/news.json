@@ -1,0 +1,25 @@
+{
+  "noticias": [
+    {
+      "titulo": "Grupo HE2DIHÉLIA lança novo site institucional",
+      "empresa": "grupo",
+      "data": "2026-07-22",
+      "resumo": "Já está no ar o novo site do grupo, reunindo as cinco empresas numa só casa digital.",
+      "imagem": ""
+    },
+    {
+      "titulo": "BALOBA ECO BLOCOS reforça produção de blocos ecológicos",
+      "empresa": "baloba-eco-blocos",
+      "data": "2026-07-10",
+      "resumo": "Aumento da capacidade de produção para responder à procura de obras em Bissau.",
+      "imagem": ""
+    },
+    {
+      "titulo": "PUREZA DIVINA chega a novos pontos de venda",
+      "empresa": "pureza-divina",
+      "data": "2026-06-28",
+      "resumo": "A água PUREZA DIVINA passa a estar disponível em mais lojas e mercados.",
+      "imagem": ""
+    }
+  ]
+}

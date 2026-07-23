@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HE2DIHÉLIA, SARL — Grupo Empresarial da Guiné-Bissau</title>
+<meta name="description" content="HE2DIHÉLIA, SARL: cinco empresas, uma só visão — construção, blocos ecológicos, água mineral, gelo e jogos online na Guiné-Bissau.">
+<link rel="icon" href="assets/logos/he2dihelia-grupo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="nav" id="siteNav">
+  <div class="container">
+    <a class="nav-brand" href="#topo">
+      <img src="assets/logos/he2dihelia-grupo.png" alt="HE2DIHÉLIA, SARL">
+      HE2DIHÉLIA, SARL
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <!-- links das empresas inseridos via JS -->
+      <li><a href="#noticias">Notícias</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">☰</button>
+  </div>
+</nav>
+
+<header class="hero" id="topo">
+  <div class="container">
+    <span class="hero-eyebrow">Guiné-Bissau · Grupo empresarial</span>
+    <h1>Cinco empresas.<br>Uma só visão de futuro.</h1>
+    <p class="lead" id="heroLead">A carregar...</p>
+    <div class="hero-actions">
+      <a href="#empresas" class="btn btn-solid">Conhecer as empresas</a>
+      <a href="#contacto" class="btn btn-outline">Falar connosco</a>
+    </div>
+    <div class="hero-companies-strip" id="heroStrip"></div>
+  </div>
+  <div class="hero-ring" aria-hidden="true"></div>
+</header>
+
+<section class="about section" id="sobre">
+  <div class="container about-grid">
+    <div class="reveal">
+      <span class="eyebrow">O grupo</span>
+      <h2>HE2DIHÉLIA, SARL</h2>
+      <p class="company-desc" id="groupDesc">A carregar...</p>
+      <p id="groupNif" style="color:var(--ink-soft); font-size:.9rem;"></p>
+      <div class="stat-row">
+        <div class="stat"><b>5</b><span>Empresas do grupo</span></div>
+        <div class="stat"><b>1</b><span>Visão comum</span></div>
+        <div class="stat"><b>GB</b><span>Feito na Guiné-Bissau</span></div>
+      </div>
+    </div>
+    <div class="about-badge reveal">
+      <img src="assets/logos/he2dihelia-grupo.png" alt="Selo HE2DIHÉLIA, SARL">
+    </div>
+  </div>
+</section>
+
+<div id="empresas">
+  <div id="companiesRoot"><!-- secções das empresas inseridas via JS --></div>
+</div>
+
+<section class="news section" id="noticias">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Feed do grupo</span>
+      <h2>Notícias e novidades</h2>
+      <p>Atualizações de todas as empresas do grupo, num só lugar.</p>
+    </div>
+    <div class="news-grid" id="newsGrid"></div>
+  </div>
+</section>
+
+<section class="contact section" id="contacto">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">Contacto</span>
+      <h2>Vamos conversar sobre o seu projeto</h2>
+      <p class="company-desc">Seja para uma obra, um fornecimento de água ou gelo, ou uma parceria — a nossa equipa responde rapidamente.</p>
+    </div>
+    <div class="contact-card reveal">
+      <h3>HE2DIHÉLIA, SARL</h3>
+      <p style="color:var(--ink-soft)" id="groupAddress"></p>
+      <p style="color:var(--ink-soft)">
+        Telefone / WhatsApp: <strong id="groupPhone"></strong><br>
+        E-mail: <strong id="groupEmail"></strong>
+      </p>
+      <a class="btn btn-solid" id="groupEmailBtn" href="#">Enviar e-mail</a>
+      <div id="groupSocial" style="margin-top:14px;"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <span>© <span id="year"></span> HE2DIHÉLIA, SARL — Guiné-Bissau</span>
+    <span>Site desenvolvido para o grupo · NIF 510148085</span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+</body>
+</html>

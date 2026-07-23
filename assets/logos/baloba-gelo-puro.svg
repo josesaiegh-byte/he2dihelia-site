@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="iceRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a4d8c"/>
+      <stop offset="1" stop-color="#1a8fd1"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="200" cy="200" r="196" fill="#ffffff" stroke="url(#iceRing)" stroke-width="8"/>
+  <circle cx="200" cy="200" r="172" fill="none" stroke="#1a8fd1" stroke-width="3"/>
+
+  <path id="topArc" d="M 60 150 A 155 155 0 0 1 340 150" fill="none"/>
+  <path id="bottomArc" d="M 78 300 A 150 150 0 0 0 322 300" fill="none"/>
+  <text font-family="Arial, sans-serif" font-weight="700" font-size="30" fill="#0a4d8c" letter-spacing="4">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">BALOBA GELO PURO</textPath>
+  </text>
+  <text font-family="Arial, sans-serif" font-weight="700" font-size="26" fill="#0a4d8c" letter-spacing="6">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">GUINE-BISSAU</textPath>
+  </text>
+
+  <rect x="70" y="212" width="120" height="4" fill="#0a4d8c"/>
+  <rect x="210" y="212" width="120" height="4" fill="#0a4d8c"/>
+
+  <g transform="translate(200,208)">
+    <g stroke="#1a8fd1" stroke-width="7" stroke-linecap="round">
+      <line x1="0" y1="-58" x2="0" y2="58"/>
+      <line x1="-50" y1="-29" x2="50" y2="29"/>
+      <line x1="-50" y1="29" x2="50" y2="-29"/>
+    </g>
+    <g stroke="#0a4d8c" stroke-width="5" stroke-linecap="round">
+      <path d="M 0 -58 l -12 14 M 0 -58 l 12 14"/>
+      <path d="M 0 58 l -12 -14 M 0 58 l 12 -14"/>
+      <path d="M -50 -29 l 4 -18 M -50 -29 l 17 -4"/>
+      <path d="M 50 29 l -4 18 M 50 29 l -17 4"/>
+      <path d="M 50 -29 l -17 4 M 50 -29 l -4 -18"/>
+      <path d="M -50 29 l 17 -4 M -50 29 l 4 18"/>
+    </g>
+    <circle r="10" fill="#1a8fd1"/>
+  </g>
+
+  <circle cx="200" cy="200" r="196" fill="none" stroke="#0a4d8c" stroke-width="2"/>
+</svg>
