@@ -1,113 +1,117 @@
-backend:
-  name: git-gateway
-  branch: main
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HE2DIHÉLIA, SARL — Grupo Empresarial da Guiné-Bissau</title>
+<meta name="description" content="HE2DIHÉLIA, SARL: cinco empresas, uma só visão — construção, blocos ecológicos, água mineral, gelo e jogos online na Guiné-Bissau.">
+<link rel="icon" href="assets/logos/he2dihelia-grupo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
 
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
+<nav class="nav" id="siteNav">
+  <div class="container">
+    <a class="nav-brand" href="#topo">
+      <img src="assets/logos/he2dihelia-grupo.png" alt="HE2DIHÉLIA, SARL">
+      HE2DIHÉLIA, SARL
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <!-- links das empresas inseridos via JS -->
+      <li><a href="#noticias">Notícias</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">☰</button>
+  </div>
+</nav>
 
-locale: "pt"
+<header class="hero" id="topo">
+  <div class="container">
+    <span class="hero-eyebrow">Guiné-Bissau · Grupo empresarial</span>
+    <h1>Cinco empresas.<br>Uma só visão de futuro.</h1>
+    <p class="lead" id="heroLead">A carregar...</p>
+    <div class="hero-actions">
+      <a href="#empresas" class="btn btn-solid">Conhecer as empresas</a>
+      <a href="#contacto" class="btn btn-outline">Falar connosco</a>
+    </div>
+    <div class="hero-companies-strip" id="heroStrip"></div>
+  </div>
+  <div class="hero-ring" aria-hidden="true"></div>
+</header>
 
-collections:
-  - name: "site"
-    label: "Grupo & Empresas"
-    files:
-      - name: "empresas"
-        label: "Grupo e as 5 empresas"
-        file: "content/companies.json"
-        editor:
-          preview: false
-        fields:
-          - label: "Grupo"
-            name: "grupo"
-            widget: "object"
-            fields:
-              - { label: "Nome do grupo", name: "nome", widget: "string" }
-              - { label: "NIF", name: "nif", widget: "string" }
-              - { label: "País", name: "pais", widget: "string" }
-              - { label: "Slogan do grupo", name: "slogan", widget: "string" }
-              - { label: "Descrição do grupo", name: "descricao", widget: "text" }
-              - label: "Contacto do grupo"
-                name: "contacto"
-                widget: "object"
-                fields:
-                  - { label: "Morada da sede", name: "morada", widget: "string" }
-                  - { label: "Telefone / WhatsApp", name: "telefone", widget: "string" }
-                  - { label: "E-mail", name: "email", widget: "string" }
-              - label: "Redes sociais do grupo"
-                name: "redes_sociais"
-                widget: "object"
-                required: false
-                fields:
-                  - { label: "Instagram (link completo)", name: "instagram", widget: "string", required: false }
-                  - { label: "Facebook (link completo)", name: "facebook", widget: "string", required: false }
-                  - { label: "TikTok (link completo)", name: "tiktok", widget: "string", required: false }
-          - label: "Empresas"
-            name: "empresas"
-            widget: "list"
-            summary: "{{fields.nome}} — {{fields.setor}}"
-            fields:
-              - { label: "Identificador (não alterar)", name: "id", widget: "string" }
-              - { label: "Nome da empresa", name: "nome", widget: "string" }
-              - { label: "Setor", name: "setor", widget: "string" }
-              - { label: "Logótipo", name: "logo", widget: "image" }
-              - { label: "Cor primária (ex: #e8792d)", name: "cor_primaria", widget: "string" }
-              - { label: "Cor secundária (ex: #1c2f45)", name: "cor_secundaria", widget: "string" }
-              - { label: "Slogan", name: "slogan", widget: "string" }
-              - { label: "Descrição", name: "descricao", widget: "text" }
-              - label: "Contacto da empresa"
-                name: "contacto"
-                widget: "object"
-                required: false
-                fields:
-                  - { label: "Morada", name: "morada", widget: "string", required: false }
-                  - { label: "Telefone / WhatsApp", name: "telefone", widget: "string", required: false }
-                  - { label: "E-mail", name: "email", widget: "string", required: false }
-              - label: "Redes sociais"
-                name: "redes_sociais"
-                widget: "object"
-                required: false
-                fields:
-                  - { label: "Instagram (link completo)", name: "instagram", widget: "string", required: false }
-                  - { label: "Facebook (link completo)", name: "facebook", widget: "string", required: false }
-                  - { label: "TikTok (link completo)", name: "tiktok", widget: "string", required: false }
-              - label: "Serviços"
-                name: "servicos"
-                widget: "list"
-                field: { label: "Serviço", name: "servico", widget: "string" }
-              - label: "Galeria (fotos e vídeos)"
-                name: "galeria"
-                widget: "list"
-                summary: "{{fields.legenda}}"
-                fields:
-                  - { label: "Tipo", name: "tipo", widget: "select", options: ["imagem", "video"] }
-                  - { label: "Ficheiro", name: "src", widget: "file", required: false }
-                  - { label: "Legenda", name: "legenda", widget: "string", required: false }
+<section class="about section" id="sobre">
+  <div class="container about-grid">
+    <div class="reveal">
+      <span class="eyebrow">O grupo</span>
+      <h2>HE2DIHÉLIA, SARL</h2>
+      <p class="company-desc" id="groupDesc">A carregar...</p>
+      <p id="groupNif" style="color:var(--ink-soft); font-size:.9rem;"></p>
+      <div class="stat-row">
+        <div class="stat"><b>5</b><span>Empresas do grupo</span></div>
+        <div class="stat"><b>1</b><span>Visão comum</span></div>
+        <div class="stat"><b>GB</b><span>Feito na Guiné-Bissau</span></div>
+      </div>
+    </div>
+    <div class="about-badge reveal">
+      <img src="assets/logos/he2dihelia-grupo.png" alt="Selo HE2DIHÉLIA, SARL">
+    </div>
+  </div>
+</section>
 
-  - name: "noticias"
-    label: "Notícias / Feed"
-    files:
-      - name: "noticias"
-        label: "Feed de notícias"
-        file: "content/news.json"
-        editor:
-          preview: false
-        fields:
-          - label: "Notícias"
-            name: "noticias"
-            widget: "list"
-            summary: "{{fields.data}} — {{fields.titulo}}"
-            fields:
-              - { label: "Título", name: "titulo", widget: "string" }
-              - label: "Empresa"
-                name: "empresa"
-                widget: "select"
-                options:
-                  - { label: "Grupo (geral)", value: "grupo" }
-                  - { label: "BALOBA TCHON FIRME", value: "baloba-tchon-firme" }
-                  - { label: "BALOBA ECO BLOCOS", value: "baloba-eco-blocos" }
-                  - { label: "PUREZA DIVINA", value: "pureza-divina" }
-                  - { label: "BALOBA GELO PURO", value: "fabrica-de-gelo" }
-                  - { label: "GB COLOSCOLOS", value: "gb-coloscolos" }
-              - { label: "Data", name: "data", widget: "date", format: "YYYY-MM-DD" }
-              - { label: "Resumo", name: "resumo", widget: "text" }
-              - { label: "Imagem (opcional)", name: "imagem", widget: "image", required: false }
+<div id="empresas">
+  <div id="companiesRoot"><!-- secções das empresas inseridas via JS --></div>
+</div>
+
+<section class="news section" id="noticias">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Feed do grupo</span>
+      <h2>Notícias e novidades</h2>
+      <p>Atualizações de todas as empresas do grupo, num só lugar.</p>
+    </div>
+    <div class="news-grid" id="newsGrid"></div>
+  </div>
+</section>
+
+<section class="contact section" id="contacto">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">Contacto</span>
+      <h2>Vamos conversar sobre o seu projeto</h2>
+      <p class="company-desc">Seja para uma obra, um fornecimento de água ou gelo, ou uma parceria — a nossa equipa responde rapidamente.</p>
+    </div>
+    <div class="contact-card reveal">
+      <h3>HE2DIHÉLIA, SARL</h3>
+      <p style="color:var(--ink-soft)" id="groupAddress"></p>
+      <p style="color:var(--ink-soft)">
+        Telefone / WhatsApp: <strong id="groupPhone"></strong><br>
+        E-mail: <strong id="groupEmail"></strong>
+      </p>
+      <a class="btn btn-solid" id="groupEmailBtn" href="#">Enviar e-mail</a>
+      <div id="groupSocial" style="margin-top:14px;"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <span>© <span id="year"></span> HE2DIHÉLIA, SARL — Guiné-Bissau</span>
+    <span>Site desenvolvido para o grupo · NIF 510148085</span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("login", () => {
+      document.location.href = "/admin/";
+    });
+  }
+</script>
+</body>
+</html>
