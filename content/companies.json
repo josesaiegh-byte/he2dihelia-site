@@ -28,9 +28,9 @@
       },
       "logo": "assets/logos/baloba-tchon-firme.png",
       "contacto": {
-        "morada": "[adicionar morada]",
-        "telefone": "[adicionar número]",
-        "email": "geral@balobatchonfirme.gw"
+        "morada": "Sede: RUA VITORINO COSTA, N2 (T1-B) - Prédio dos Transportes, Bissau, Guiné-Bissau",
+        "telefone": "+245 95 631 29 67 / +245 96 90 81 763",
+        "email": ""
       },
       "servicos": [
         "Construção de raiz e ampliações",
@@ -41,18 +41,18 @@
       "galeria": [
         {
           "tipo": "imagem",
-          "src": "",
+          "src": "/assets/uploads/whatsapp-image-2026-06-30-at-23.32.11.jpeg",
           "legenda": "Obra em Bissau — fase de estrutura"
         },
         {
           "tipo": "imagem",
-          "src": "",
+          "src": "/assets/uploads/whatsapp-image-2026-06-30-at-23.32.07.jpeg",
           "legenda": "Equipa BALOBA TCHON FIRME no terreno"
         },
         {
-          "tipo": "video",
-          "src": "",
-          "legenda": "Vídeo: acabamentos finais de uma moradia"
+          "tipo": "imagem",
+          "src": "/assets/uploads/whatsapp-image-2026-07-07-at-11.46.18.jpeg",
+          "legenda": "Rebocamento com máquina de uma moradia"
         }
       ],
       "nome": "BALOBA TCHON FIRME",
