@@ -73,7 +73,11 @@ p{margin:0 0 1em;}
 .nav .container{ display:flex; align-items:center; justify-content:space-between; height:72px; }
 .nav-brand{ display:flex; align-items:center; gap:10px; font-family:var(--font-display); font-weight:600; font-size:1.05rem; }
 .nav-brand img{ height:36px; width:36px; border-radius:50%; }
-.nav-links{ display:flex; gap:26px; list-style:none; margin:0; padding:0; font-size:.88rem; }
+.nav-links{ display:flex; gap:26px; list-style:none; margin:0; padding:0; }
+.nav-links li, .nav-links a{
+  font-size:.88rem; font-weight:500; font-family:var(--font-body);
+  text-transform:none; letter-spacing:normal; white-space:nowrap;
+}
 .nav-links a{ opacity:.82; transition:opacity .2s; position:relative; }
 .nav-links a:hover{ opacity:1; }
 .nav-toggle{ display:none; background:none; border:none; color:var(--cream); font-size:1.6rem; cursor:pointer; }
@@ -103,7 +107,26 @@ p{margin:0 0 1em;}
 .hero-actions .btn-outline{ color:var(--cream); }
 .hero-actions .btn-outline:hover{ background:var(--cream); color:var(--navy); }
 
- .hero-ring{ position:absolute; right:-120px; top:50%; transform:translateY(-50%); width:560px; height:560px; border-radius:50%; border:1px solid rgba(201,154,46,0.35); display:flex; align-items:center; justify-content:center; } .hero-ring::before{ content:''; position:absolute; inset:60px; border-radius:50%; border:1px solid rgba(246,242,234,0.14); } .hero-ring-logo{ width:300px; height:300px; border-radius:50%; background: var(--cream); box-shadow: 0 20px 60px rgba(0,0,0,0.35); padding:18px; position:relative; z-index:2; } @media (max-width: 1200px){ .hero-ring{ right:-220px; } } @media (max-width: 860px){ .hero-ring{ display:none; } }.hero-dots{ position:absolute; inset:0; z-index:1; opacity:.5; }
+.hero-ring{
+  position:absolute; right:-120px; top:50%; transform:translateY(-50%);
+  width:560px; height:560px; border-radius:50%;
+  border:1px solid rgba(201,154,46,0.35);
+  display:flex; align-items:center; justify-content:center;
+}
+.hero-ring::before{
+  content:''; position:absolute; inset:60px; border-radius:50%;
+  border:1px solid rgba(246,242,234,0.14);
+}
+.hero-ring-logo{
+  width:300px; height:300px; border-radius:50%;
+  background: var(--cream);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  padding:18px;
+  position:relative; z-index:2;
+}
+@media (max-width: 1200px){ .hero-ring{ right:-220px; } }
+@media (max-width: 860px){ .hero-ring{ display:none; } }
+.hero-dots{ position:absolute; inset:0; z-index:1; opacity:.5; }
 .hero-companies-strip{
   display:flex; gap:28px; flex-wrap:wrap; margin-top:3.2em; padding-top:2em;
   border-top:1px solid rgba(246,242,234,0.16);
