@@ -48,6 +48,7 @@ collections:
             fields:
               - { label: "Identificador (não alterar)", name: "id", widget: "string" }
               - { label: "Nome da empresa", name: "nome", widget: "string" }
+              - { label: "Nome curto no menu", name: "nome_menu", widget: "string", required: false, hint: "Nome mais curto mostrado na barra do menu (ex: 'Eco Blocos')" }
               - { label: "Setor", name: "setor", widget: "string" }
               - { label: "Logótipo", name: "logo", widget: "image" }
               - { label: "Cor primária (ex: #e8792d)", name: "cor_primaria", widget: "string" }
