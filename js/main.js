@@ -76,7 +76,7 @@ function buildLightbox(){
 function renderNav(companies){
   const links = document.getElementById('navLinks');
   companies.forEach(c => {
-    links.appendChild(el('li', {}, el('a', { href: '#' + c.id }, c.nome)));
+    links.appendChild(el('li', {}, el('a', { href: '#' + c.id }, c.nome_menu || c.nome)));
   });
 }
 
